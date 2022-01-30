@@ -1,0 +1,20 @@
+
+.display {
+    height: 100px;
+    border: 4px solid aqua;
+    margin: 15px;
+    border-radius: 6px;
+}
+
+.button {
+    display: inline-block;
+    color: aqua;
+    margin-left: 10px;
+}
+
+.buttons {
+    margin: 31px;
+    margin: 16px;
+    border: 4px solid aqua;
+    border-radius: 6px;
+}
