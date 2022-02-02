@@ -1,17 +1,13 @@
-import React from 'react';
-import Button from './Button';
+import Button from '../Button';
 
 type PropsType = {
     value: number
-    setValue: (value: number) => void
     maxValue: number
+    incHandler: () => void
 }
 
 const Increment = (props: PropsType) => {
 
-    const increment = () => {
-        props.setValue(props.value + 1)
-    }
 
     let isTransparant = {
         opacity: props.value >= props.maxValue ? '0.5' : '',
@@ -21,7 +17,7 @@ const Increment = (props: PropsType) => {
         <div>
             <Button 
             name='inc' 
-            onClickHandler={increment} 
+            onClickHandler={props.incHandler} 
             value={props.value} 
             maxValue={props.maxValue}
             disabled={props.value === props.maxValue}

@@ -1,4 +1,4 @@
-import React, { KeyboardEvent } from 'react';
+import React from 'react';
 import s from './button.module.css'
 
 type ButtonPropsType = {
