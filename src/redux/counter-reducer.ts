@@ -50,7 +50,6 @@ export const counterReducer = (state: InitialStateType = initialState, action: A
 type ActionType =
     IncValueACType |
     resetValueACType |
-    ChangeValueACType |
     showDisplayOrSetACType |
     ChangeMaxValueACType |
     changeStartValueACType
@@ -64,12 +63,6 @@ type resetValueACType = ReturnType<typeof resetValueAC>
 export const resetValueAC = () => ({
     type: 'RESET_VALUE'
 } as const)
-
-type ChangeValueACType = ReturnType<typeof changeValueAC>
-export const changeValueAC = (value: number) => ({
-    type: 'CHANGE_VALUE', value
-} as const)
-
 
 type changeStartValueACType = ReturnType<typeof changeStartValueAC>
 export const changeStartValueAC = (value: number) => ({

@@ -1,6 +1,6 @@
 import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
-import { changeMaxValueAC, changeStartValueAC, changeValueAC } from '../../../redux/counter-reducer';
+import { changeMaxValueAC, changeStartValueAC } from '../../../redux/counter-reducer';
 import Setting from './Setting';
 import { AppStateType } from '../../../redux/redux-store';
 

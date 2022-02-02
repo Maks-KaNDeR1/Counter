@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 import { AppStateType } from '../../../redux/redux-store';
-import { changeValueAC, resetValueAC } from '../../../redux/counter-reducer';
+import { resetValueAC } from '../../../redux/counter-reducer';
 import Reset from './Reset';
 
 

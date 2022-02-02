@@ -5,12 +5,9 @@ import Button from './Buttons/Button';
 import { SettingContainer } from './Display/Setting/SettingContainer';
 import { ResetContainer } from './Buttons/Reset/ResetContainer';
 import { IncrementContainer } from './Buttons/Increment/IncrementContainer';
-import { changeMaxValueAC, changeStartValueAC, changeValueAC, incValueAC, resetValueAC, showDisplayOrSetAC } from '../redux/counter-reducer';
+import { showDisplayOrSetAC } from '../redux/counter-reducer';
 import { AppStateType, store } from '../redux/redux-store';
 import { useDispatch, useSelector } from 'react-redux';
-import Increment from './Buttons/Increment/Increment';
-import Reset from './Buttons/Reset/Reset';
-import Setting from './Display/Setting/Setting';
 
 
 function Counter() {
@@ -20,22 +17,6 @@ function Counter() {
     const maxValue = useSelector<AppStateType, number>(state => state.counter.maxValue)
 
     const dispatch = useDispatch()
-
-    const incHandler = () => {
-        dispatch(incValueAC())
-    }
-
-    const resetHandler = () => {
-        dispatch(resetValueAC())
-    }
-
-    const onChangeStartValue = (value: number) => {
-        dispatch(changeStartValueAC(value))
-    }
-
-    const onChangeMaxValue = (value: number) => {
-        dispatch(changeMaxValueAC(value))
-    }
 
     const onClickHandler = () => {
         if (count === true) {
@@ -48,24 +29,24 @@ function Counter() {
 
 
 
-     useEffect(() => {
-        getFromLocalStorage()
-    }, [])
+    //  useEffect(() => {
+    //     getFromLocalStorage()
+    // }, [])
 
-    useEffect(() => {
-        setToLocalStorage()
-    }, [value])
+    // useEffect(() => {
+    //     setToLocalStorage()
+    // }, [value])
 
-    const setToLocalStorage = () => {
-        localStorage.setItem('counterValueKey', JSON.stringify(value))
-    }
-    const getFromLocalStorage = () => {
-        let valueAString = localStorage.getItem('counterValueKey')
-        if (valueAString) {
-            let newValue = JSON.parse(valueAString)
-            changeValueAC(newValue)
-        }
-    }
+    // const setToLocalStorage = () => {
+    //     localStorage.setItem('counterValueKey', JSON.stringify(value))
+    // }
+    // const getFromLocalStorage = () => {
+    //     let valueAString = localStorage.getItem('counterValueKey')
+    //     if (valueAString) {
+    //         let newValue = JSON.parse(valueAString)
+    //         changeValueAC(newValue)
+    //     }
+    // }
 
 
     return <div>
@@ -73,26 +54,15 @@ function Counter() {
         <div className={s.display}>
             {
                 count ? <Score value={value} maxValue={maxValue} />
-                    : <div>
-                    <SettingContainer />
-                    
-                    {/* <Setting value={value} maxValue={maxValue}
-                        onChangeStartValue={onChangeStartValue}
-                        onChangeMaxValue={onChangeMaxValue}
-                    /> */}
-                    </div>
+                    : <SettingContainer />
             }
         </div>
 
         <div className={s.buttons} >
             <div className={s.button}>
-                <Increment incHandler={incHandler}
-                    value={value} maxValue={maxValue} />
-                <IncrementContainer />
+                 <IncrementContainer />
             </div >
             <div className={s.button}>
-                <Reset resetHandler={resetHandler}
-                    value={value} />
                 <ResetContainer />
             </div>
             <div className={s.button}>

@@ -3,22 +3,18 @@ import { useSelector } from 'react-redux';
 import { AppStateType } from '../../redux/redux-store';
 
 
-// type PropsType = {
-//     value: number
-//     maxValue: number
-// }
+type PropsType = {
+    value: number
+    maxValue: number
+}
 
 
-function Score(props: any) {
+function Score(props: PropsType) {
 
-    const value = useSelector<AppStateType, number>( state => state.counter.value)
-    const maxValue = useSelector<AppStateType, number>( 
-        state => state.counter.maxValue)
-
-    return <div style={{ color: value === maxValue ? 'red' : '',
+    return <div style={{ color: props.value === props.maxValue ? 'red' : '',
     fontSize: '5rem'
     }}>
-        {value}
+        {props.value}
     </div>;
 }
 
