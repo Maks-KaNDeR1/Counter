@@ -27,28 +27,6 @@ function Counter() {
         console.log(count)
     }
 
-
-
-    //  useEffect(() => {
-    //     getFromLocalStorage()
-    // }, [])
-
-    // useEffect(() => {
-    //     setToLocalStorage()
-    // }, [value])
-
-    // const setToLocalStorage = () => {
-    //     localStorage.setItem('counterValueKey', JSON.stringify(value))
-    // }
-    // const getFromLocalStorage = () => {
-    //     let valueAString = localStorage.getItem('counterValueKey')
-    //     if (valueAString) {
-    //         let newValue = JSON.parse(valueAString)
-    //         changeValueAC(newValue)
-    //     }
-    // }
-
-
     return <div>
 
         <div className={s.display}>
