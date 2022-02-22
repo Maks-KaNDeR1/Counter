@@ -1,6 +1,6 @@
 import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
-import { changeMaxValueAC, changeStartValueAC } from '../../../redux/counter-reducer';
+import { changeMaxValue, changeStartValue } from '../../../redux/counter-reducer';
 import Setting from './Setting';
 import { AppStateType } from '../../../redux/redux-store';
 
@@ -24,10 +24,10 @@ const mapStateToProps = (state: AppStateType): MapStateToPropsType => {
 const mapDispatchToProps = (dispatch: Dispatch): MapDispatchToPropsType => {
     return {
         onChangeStartValue: (value: number) => {
-            dispatch(changeStartValueAC(value))
+            dispatch(changeStartValue(value))
         },
         onChangeMaxValue: (value: number) => {
-            dispatch(changeMaxValueAC(value))
+            dispatch(changeMaxValue(value))
         }
     };
 }

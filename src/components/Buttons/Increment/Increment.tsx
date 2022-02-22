@@ -1,26 +1,29 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { CounterStateType, incValue } from '../../../redux/counter-reducer';
+import { AppStateType } from '../../../redux/redux-store';
 import Button from '../Button';
 
-type PropsType = {
-    value: number
-    maxValue: number
-    incHandler: () => void
-}
+const Increment = () => {
 
-const Increment = (props: PropsType) => {
+    const counter = useSelector<AppStateType, CounterStateType>(state => state.counter)
+    const dispatch = useDispatch()
 
+    let incHandler = () => {
+        dispatch(incValue())
+    }
 
     let isTransparant = {
-        opacity: props.value >= props.maxValue ? '0.5' : '',
+        opacity: counter.value >= counter.maxValue ? '0.5' : '',
     }
 
     return (
         <div>
             <Button 
             name='inc' 
-            onClickHandler={props.incHandler} 
-            value={props.value} 
-            maxValue={props.maxValue}
-            disabled={props.value === props.maxValue}
+            onClickHandler={incHandler} 
+            value={counter.value} 
+            maxValue={counter.maxValue}
+            disabled={counter.value === counter.maxValue}
             style={isTransparant}
             />
         </div>

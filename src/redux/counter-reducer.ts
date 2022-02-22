@@ -1,19 +1,19 @@
 
 
 
-type InitialStateType = {
+export type CounterStateType = {
     value: number
     maxValue: number
     count: boolean
 }
 
-let initialState: InitialStateType = {
+let initialState: CounterStateType = {
     value: 0,
     maxValue: 5,
     count: true,
 }
 
-export const counterReducer = (state: InitialStateType = initialState, action: ActionType) => {
+export const counterReducer = (state: CounterStateType = initialState, action: ActionType) => {
     switch (action.type) {
         case 'INC_VALUE': {
             return {
@@ -48,34 +48,34 @@ export const counterReducer = (state: InitialStateType = initialState, action: A
 
 
 type ActionType =
-    IncValueACType |
-    resetValueACType |
-    showDisplayOrSetACType |
-    ChangeMaxValueACType |
-    changeStartValueACType
+    IncValueType |
+    resetValueType |
+    showDisplayOrSetType |
+    ChangeMaxValueType |
+    changeStartValueType
 
-type IncValueACType = ReturnType<typeof incValueAC>
-export const incValueAC = () => ({
+type IncValueType = ReturnType<typeof incValue>
+export const incValue = () => ({
     type: 'INC_VALUE'
 } as const)
 
-type resetValueACType = ReturnType<typeof resetValueAC>
-export const resetValueAC = () => ({
+type resetValueType = ReturnType<typeof resetValue>
+export const resetValue = () => ({
     type: 'RESET_VALUE'
 } as const)
 
-type changeStartValueACType = ReturnType<typeof changeStartValueAC>
-export const changeStartValueAC = (value: number) => ({
+type changeStartValueType = ReturnType<typeof changeStartValue>
+export const changeStartValue = (value: number) => ({
     type: 'CHANGE_START_VALUE', startValue: value
 } as const)
 
-type ChangeMaxValueACType = ReturnType<typeof changeMaxValueAC>
-export const changeMaxValueAC = (value: number) => ({
+type ChangeMaxValueType = ReturnType<typeof changeMaxValue>
+export const changeMaxValue = (value: number) => ({
     type: 'CHANGE_MAX_VALUE', maxValue: value
 } as const)
 
 
-type showDisplayOrSetACType = ReturnType<typeof showDisplayOrSetAC>
-export const showDisplayOrSetAC = (count: boolean) => ({
+type showDisplayOrSetType = ReturnType<typeof showDisplayOrSet>
+export const showDisplayOrSet = (count: boolean) => ({
     type: 'CHOW_DISPLAY_OR_SET', count
 } as const)

@@ -1,26 +1,28 @@
+import { useDispatch, useSelector } from 'react-redux';
+import { CounterStateType, resetValue } from '../../../redux/counter-reducer';
+import { AppStateType } from '../../../redux/redux-store';
 import Button from './../Button';
 
-type PropsType = {
-    value: number
-    resetHandler: () => void
-}
 
-const Reset = (props: PropsType) => {
+const Reset = () => {
 
-    // const reset = () => {
-    //     props.resetHandler(0)
-    // }
+    const counter = useSelector<AppStateType, CounterStateType>(state => state.counter)
+    const dispatch = useDispatch()
+
+    const resetHandler = () => {
+        dispatch(resetValue())
+    }
 
     let isTransparant = {
-        opacity: props.value === 0 ? '0.5' : '',
+        opacity: counter.value === 0 ? '0.5' : '',
     }
 
     return (
         <div>
             <Button   
             name='reset'
-            onClickHandler={props.resetHandler} 
-            value={props.value} 
+            onClickHandler={resetHandler} 
+            value={counter.value} 
             style={isTransparant}
             />
         </div>

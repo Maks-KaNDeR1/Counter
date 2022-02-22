@@ -9,6 +9,8 @@ type PropsType = {
 }
 
 const Setting = (props: PropsType) => {
+
+    
     const onChangeStartValue = (e: ChangeEvent<HTMLInputElement>) => {
         props.onChangeStartValue(e.currentTarget.valueAsNumber)
     }

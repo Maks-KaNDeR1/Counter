@@ -3,11 +3,11 @@ import Score from './Display/Score';
 import s from './counter.module.css'
 import Button from './Buttons/Button';
 import { SettingContainer } from './Display/Setting/SettingContainer';
-import { ResetContainer } from './Buttons/Reset/ResetContainer';
-import { IncrementContainer } from './Buttons/Increment/IncrementContainer';
-import { showDisplayOrSetAC } from '../redux/counter-reducer';
-import { AppStateType, store } from '../redux/redux-store';
+import { showDisplayOrSet } from '../redux/counter-reducer';
+import { AppStateType } from '../redux/redux-store';
 import { useDispatch, useSelector } from 'react-redux';
+import Increment from './Buttons/Increment/Increment';
+import Reset from './Buttons/Reset/Reset';
 
 
 function Counter() {
@@ -18,11 +18,12 @@ function Counter() {
 
     const dispatch = useDispatch()
 
+    
     const onClickHandler = () => {
         if (count === true) {
-            dispatch(showDisplayOrSetAC(false))
+            dispatch(showDisplayOrSet(false))
         } else {
-            dispatch(showDisplayOrSetAC(true))
+            dispatch(showDisplayOrSet(true))
         }
         console.log(count)
     }
@@ -38,10 +39,10 @@ function Counter() {
 
         <div className={s.buttons} >
             <div className={s.button}>
-                 <IncrementContainer />
+                 <Increment />
             </div >
             <div className={s.button}>
-                <ResetContainer />
+                <Reset />
             </div>
             <div className={s.button}>
                 <Button
