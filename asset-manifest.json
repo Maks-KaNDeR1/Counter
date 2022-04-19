@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/https//Maks-KaNDeR1.github.io/Counter/static/css/main.7893f3f1.chunk.css",
-    "main.js": "/https//Maks-KaNDeR1.github.io/Counter/static/js/main.043d6906.chunk.js",
-    "main.js.map": "/https//Maks-KaNDeR1.github.io/Counter/static/js/main.043d6906.chunk.js.map",
-    "runtime-main.js": "/https//Maks-KaNDeR1.github.io/Counter/static/js/runtime-main.22aaad2b.js",
-    "runtime-main.js.map": "/https//Maks-KaNDeR1.github.io/Counter/static/js/runtime-main.22aaad2b.js.map",
-    "static/js/2.fa516fb8.chunk.js": "/https//Maks-KaNDeR1.github.io/Counter/static/js/2.fa516fb8.chunk.js",
-    "static/js/2.fa516fb8.chunk.js.map": "/https//Maks-KaNDeR1.github.io/Counter/static/js/2.fa516fb8.chunk.js.map",
-    "static/js/3.16a95615.chunk.js": "/https//Maks-KaNDeR1.github.io/Counter/static/js/3.16a95615.chunk.js",
-    "static/js/3.16a95615.chunk.js.map": "/https//Maks-KaNDeR1.github.io/Counter/static/js/3.16a95615.chunk.js.map",
+    "main.js": "/https//Maks-KaNDeR1.github.io/Counter/static/js/main.11eac377.chunk.js",
+    "main.js.map": "/https//Maks-KaNDeR1.github.io/Counter/static/js/main.11eac377.chunk.js.map",
+    "runtime-main.js": "/https//Maks-KaNDeR1.github.io/Counter/static/js/runtime-main.c06c403d.js",
+    "runtime-main.js.map": "/https//Maks-KaNDeR1.github.io/Counter/static/js/runtime-main.c06c403d.js.map",
+    "static/js/2.7d754bc0.chunk.js": "/https//Maks-KaNDeR1.github.io/Counter/static/js/2.7d754bc0.chunk.js",
+    "static/js/2.7d754bc0.chunk.js.map": "/https//Maks-KaNDeR1.github.io/Counter/static/js/2.7d754bc0.chunk.js.map",
+    "static/js/3.b3fb426f.chunk.js": "/https//Maks-KaNDeR1.github.io/Counter/static/js/3.b3fb426f.chunk.js",
+    "static/js/3.b3fb426f.chunk.js.map": "/https//Maks-KaNDeR1.github.io/Counter/static/js/3.b3fb426f.chunk.js.map",
     "index.html": "/https//Maks-KaNDeR1.github.io/Counter/index.html",
     "static/css/main.7893f3f1.chunk.css.map": "/https//Maks-KaNDeR1.github.io/Counter/static/css/main.7893f3f1.chunk.css.map",
-    "static/js/2.fa516fb8.chunk.js.LICENSE.txt": "/https//Maks-KaNDeR1.github.io/Counter/static/js/2.fa516fb8.chunk.js.LICENSE.txt"
+    "static/js/2.7d754bc0.chunk.js.LICENSE.txt": "/https//Maks-KaNDeR1.github.io/Counter/static/js/2.7d754bc0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.22aaad2b.js",
-    "static/js/2.fa516fb8.chunk.js",
+    "static/js/runtime-main.c06c403d.js",
+    "static/js/2.7d754bc0.chunk.js",
     "static/css/main.7893f3f1.chunk.css",
-    "static/js/main.043d6906.chunk.js"
+    "static/js/main.11eac377.chunk.js"
   ]
 }
