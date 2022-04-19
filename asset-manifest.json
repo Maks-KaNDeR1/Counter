@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/https//maks-kander1.github.io/Counter/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/https//maks-kander1.github.io/Counter/static/js/main.91fdb5aa.chunk.js",
-    "main.js.map": "/https//maks-kander1.github.io/Counter/static/js/main.91fdb5aa.chunk.js.map",
-    "runtime-main.js": "/https//maks-kander1.github.io/Counter/static/js/runtime-main.02400c7d.js",
-    "runtime-main.js.map": "/https//maks-kander1.github.io/Counter/static/js/runtime-main.02400c7d.js.map",
-    "static/js/2.4394c4a6.chunk.js": "/https//maks-kander1.github.io/Counter/static/js/2.4394c4a6.chunk.js",
-    "static/js/2.4394c4a6.chunk.js.map": "/https//maks-kander1.github.io/Counter/static/js/2.4394c4a6.chunk.js.map",
-    "static/js/3.d3294c61.chunk.js": "/https//maks-kander1.github.io/Counter/static/js/3.d3294c61.chunk.js",
-    "static/js/3.d3294c61.chunk.js.map": "/https//maks-kander1.github.io/Counter/static/js/3.d3294c61.chunk.js.map",
+    "main.css": "/https//maks-kander1.github.io/Counter/static/css/main.7893f3f1.chunk.css",
+    "main.js": "/https//maks-kander1.github.io/Counter/static/js/main.11eac377.chunk.js",
+    "main.js.map": "/https//maks-kander1.github.io/Counter/static/js/main.11eac377.chunk.js.map",
+    "runtime-main.js": "/https//maks-kander1.github.io/Counter/static/js/runtime-main.c12a4d26.js",
+    "runtime-main.js.map": "/https//maks-kander1.github.io/Counter/static/js/runtime-main.c12a4d26.js.map",
+    "static/js/2.7d754bc0.chunk.js": "/https//maks-kander1.github.io/Counter/static/js/2.7d754bc0.chunk.js",
+    "static/js/2.7d754bc0.chunk.js.map": "/https//maks-kander1.github.io/Counter/static/js/2.7d754bc0.chunk.js.map",
+    "static/js/3.b3fb426f.chunk.js": "/https//maks-kander1.github.io/Counter/static/js/3.b3fb426f.chunk.js",
+    "static/js/3.b3fb426f.chunk.js.map": "/https//maks-kander1.github.io/Counter/static/js/3.b3fb426f.chunk.js.map",
     "index.html": "/https//maks-kander1.github.io/Counter/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/https//maks-kander1.github.io/Counter/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.4394c4a6.chunk.js.LICENSE.txt": "/https//maks-kander1.github.io/Counter/static/js/2.4394c4a6.chunk.js.LICENSE.txt"
+    "static/css/main.7893f3f1.chunk.css.map": "/https//maks-kander1.github.io/Counter/static/css/main.7893f3f1.chunk.css.map",
+    "static/js/2.7d754bc0.chunk.js.LICENSE.txt": "/https//maks-kander1.github.io/Counter/static/js/2.7d754bc0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.02400c7d.js",
-    "static/js/2.4394c4a6.chunk.js",
-    "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.91fdb5aa.chunk.js"
+    "static/js/runtime-main.c12a4d26.js",
+    "static/js/2.7d754bc0.chunk.js",
+    "static/css/main.7893f3f1.chunk.css",
+    "static/js/main.11eac377.chunk.js"
   ]
 }
