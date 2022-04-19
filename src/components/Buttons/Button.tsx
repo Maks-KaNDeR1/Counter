@@ -21,4 +21,5 @@ const Button = (props: ButtonPropsType) => {
     >{props.name}</button>
 }
 
+    
 export default Button;

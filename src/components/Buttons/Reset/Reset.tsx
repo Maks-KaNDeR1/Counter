@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { CounterStateType, resetValue } from '../../../redux/counter-reducer';
+import { CounterStateType, resetValue, showDisplayOrSet } from '../../../redux/counter-reducer';
 import { AppStateType } from '../../../redux/redux-store';
 import Button from './../Button';
 
@@ -11,6 +11,7 @@ const Reset = () => {
 
     const resetHandler = () => {
         dispatch(resetValue())
+        dispatch(showDisplayOrSet(true))
     }
 
     let isTransparant = {

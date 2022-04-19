@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Score from './Display/Score';
 import s from './counter.module.css'
 import Button from './Buttons/Button';
@@ -18,7 +17,6 @@ function Counter() {
 
     const dispatch = useDispatch()
 
-    
     const onClickHandler = () => {
         if (count === true) {
             dispatch(showDisplayOrSet(false))
@@ -42,7 +40,7 @@ function Counter() {
                  <Increment />
             </div >
             <div className={s.button}>
-                <Reset />
+                <Reset  />
             </div>
             <div className={s.button}>
                 <Button

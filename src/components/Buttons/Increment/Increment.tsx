@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { CounterStateType, incValue } from '../../../redux/counter-reducer';
+import { CounterStateType, incValue, showDisplayOrSet } from '../../../redux/counter-reducer';
 import { AppStateType } from '../../../redux/redux-store';
 import Button from '../Button';
 
@@ -10,6 +10,7 @@ const Increment = () => {
 
     let incHandler = () => {
         dispatch(incValue())
+        dispatch(showDisplayOrSet(true))
     }
 
     let isTransparant = {
