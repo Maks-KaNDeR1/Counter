@@ -13,7 +13,7 @@ export const store = createStore(rootReducer, loadState(), applyMiddleware(thunk
 
 store.subscribe(() => {
     saveState({
-        counter: store.getState().counter
+        counter: store.getState().counter,
     })
 })
 

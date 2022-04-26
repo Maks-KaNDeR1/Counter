@@ -1,0 +1,10 @@
+
+.buttons {
+        width: 290px;
+}
+
+.button {
+        display: inline-block;
+        color: aqua;
+        margin-left: 9px;    
+}

@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
+import { resetTwoValue } from '../../../redux/counter-reducer';
 import { CounterStateType, resetValue, showDisplayOrSet } from '../../../redux/counter-reducer';
 import { AppStateType } from '../../../redux/redux-store';
 import Button from './../Button';
@@ -11,12 +12,13 @@ const Reset = () => {
 
     const resetHandler = () => {
         dispatch(resetValue())
+        dispatch(resetTwoValue())
         dispatch(showDisplayOrSet(true))
     }
 
-    let isTransparant = {
-        opacity: counter.value === 0 ? '0.5' : '',
-    }
+    // let isTransparant = {
+    //     opacity: counter.value || counter.twoValue === 0 ? '0.5' : ''
+    // }
 
     return (
         <div>
@@ -24,7 +26,7 @@ const Reset = () => {
             name='reset'
             onClickHandler={resetHandler} 
             value={counter.value} 
-            style={isTransparant}
+            // style={isTransparant}
             />
         </div>
     )

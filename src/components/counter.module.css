@@ -4,12 +4,18 @@
     border: 4px solid aqua;
     margin: 15px;
     border-radius: 6px;
+    height: 140px;
 }
 
-.button {
-    display: inline-block;
-    color: aqua;
-    margin-left: 10px;
+.display h2 {
+    margin: 1px;
+    color: rgba(94, 13, 13, 0.923);
+}
+
+.partition{
+    background-color: aqua;
+    height: 3px;
+    
 }
 
 .buttons {
@@ -18,3 +24,10 @@
     border: 4px solid aqua;
     border-radius: 6px;
 }
+
+.button {
+    display: inline-block;
+    color: aqua;
+    margin-left: 10px;
+}
+

@@ -1,35 +1,32 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { CounterStateType, incValue, showDisplayOrSet } from '../../../redux/counter-reducer';
+import { CounterStateType, decValue, showDisplayOrSet } from '../../../redux/counter-reducer';
 import { AppStateType } from '../../../redux/redux-store';
 import Button from '../Button';
 
-const Increment = () => {
+const Decrement = () => {
 
     const counter = useSelector<AppStateType, CounterStateType>(state => state.counter)
     const dispatch = useDispatch()
 
-    let incHandler = () => {
-        dispatch(incValue())
+    let decHandler = () => {
+        dispatch(decValue())
         dispatch(showDisplayOrSet(true))
     }
 
-    let isTransparant = {
-        opacity: counter.value >= counter.maxValue ? '0.5' : '',
-    }
+ 
 
     return (
         <div>
             <Button 
-            name='inc' 
-            onClickHandler={incHandler} 
+            name='dec' 
+            onClickHandler={decHandler} 
             value={counter.value} 
             maxValue={counter.maxValue}
-            disabled={counter.value >= counter.maxValue}
-            style={isTransparant}
+            // disabled={counter.value === counter.maxValue}
             />
         </div>
     )
 }
 
 
-export default Increment;
+export default Decrement;
