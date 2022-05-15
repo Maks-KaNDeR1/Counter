@@ -52,14 +52,6 @@ const Calculator = (props: PropsType) => {
             </div>
             <div className={s.button}>
                 <Button
-                    name='set'
-                    onClickHandler={incHandler}
-                    disabled={props.twoValue === props.maxValue}
-                    style={isTransparant}
-                />
-            </div>
-            <div className={s.button}>
-                <Button
                     name='-'
                     onClickHandler={minusHandler}
                 />
@@ -67,7 +59,9 @@ const Calculator = (props: PropsType) => {
             <div className={s.button}>
                 <Button
                     name='set'
-                    onClickHandler={decHandler}
+                    onClickHandler={incHandler}
+                    disabled={props.twoValue === props.maxValue}
+                    style={isTransparant}
                 />
             </div>
         </div>
